@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace IxcNet.ViewModels.Sistema.Provedor.Login.Login
+namespace IxcNet.ViewModels.Sistema.Provedor.Transmissores.Login
 {
     public class RadUsuarioViewModel
     {

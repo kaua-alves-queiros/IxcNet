@@ -10,6 +10,10 @@ namespace IxcNet.Services
     {
         HttpClient _http = new();
 
+        public IxcNetService() { }
+
+        public IxcNetService(HttpClient http) { }
+
         public void Setup(string host, string token)
         {
             _http.BaseAddress = new Uri(host);
