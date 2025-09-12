@@ -64,11 +64,6 @@ namespace IxcNet.ViewModels.Sistema.Suporte.OrdemDeServico
         public string? data_prev_final { get; set; }
         public string? origem_cadastro { get; set; }
         public string? ultima_atualizacao { get; set; }
-
-        public SuOssChamadoViewModel Copy()
-        {
-            return (SuOssChamadoViewModel)MemberwiseClone();
-        }
     }
 
 }
