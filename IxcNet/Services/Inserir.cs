@@ -1,0 +1,24 @@
+﻿using IxcNet.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http.Json;
+using System.Text;
+using System.Text.Json;
+using System.Threading.Tasks;
+
+namespace IxcNet.Services
+{
+    public partial class IxcNetService
+    {
+        public async Task<HttpStatusCode> Inserir<T> (T model) where T : INamedModel
+        {
+            var route = model.ModelName;
+            var response = await _http.PostAsJsonAsync(route, model, _jsonOptions);
+            var content = await response.Content.ReadAsStringAsync();
+            Console.WriteLine(content);
+            return response.StatusCode;
+        }
+    }
+}
