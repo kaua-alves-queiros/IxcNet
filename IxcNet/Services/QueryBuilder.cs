@@ -15,8 +15,8 @@ namespace IxcNet.Services
             return new MultipartFormDataContent
             {
                 { new StringContent($"{ModelName}.{FieldName}"), "qtype" },
-                { new StringContent(Query!), "query" },
-                { new StringContent(Oper!), "oper" },
+                { new StringContent($"{Query}"), "query" },
+                { new StringContent($"{Oper}"), "oper" },
                 { new StringContent("1"), "page" },
                 { new StringContent(MaxResults), "rp" }
             };
