@@ -24,7 +24,7 @@ namespace IxcNet.Services
 
         public static QueryBuilder List()
         {
-            return QueryBuilder.Where("id", ">", "0");
+            return Where("id", ">", "0");
         }
 
         public static QueryBuilder Where(string field, string oper, string query)
