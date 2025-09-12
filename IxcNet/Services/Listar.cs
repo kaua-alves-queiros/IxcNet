@@ -17,8 +17,9 @@ namespace IxcNet.Services
             try
             {
                 query.ModelName = new T().ModelName;
-
-                var response = await _http.PostAsync(query.ModelName, query.GetContent());
+                var request = new HttpRequestMessage(HttpMethod.Post, query.ModelName);
+                request.Headers.Add("ixcsoft", "listar");
+                var response = await _http.SendAsync(request);
                 var content = await response.Content.ReadAsStringAsync();
                 return JsonSerializer.Deserialize<IxcResponseViewModel<T>>(content)!.registros!;
             }
