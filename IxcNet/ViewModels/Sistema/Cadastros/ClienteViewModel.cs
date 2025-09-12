@@ -8,7 +8,6 @@ namespace IxcNet.ViewModels.Sistema.Cadastros
         [JsonIgnore(Condition = JsonIgnoreCondition.Always)]
         public string? ModelName => "cliente";
 
-        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string? id { get; set; }
         public string? ativo { get; set; }
         public string? id_tipo_cliente { get; set; }

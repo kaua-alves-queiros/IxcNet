@@ -4,7 +4,6 @@ namespace IxcNet.ViewModels.Sistema.Suporte.Cadastro
 {
     public class SuOssAssuntoViewModel
     {
-        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string? id { get; set; }
         public string? imprimir_prod_serv { get; set; }
         public string? modelo_email { get; set; }

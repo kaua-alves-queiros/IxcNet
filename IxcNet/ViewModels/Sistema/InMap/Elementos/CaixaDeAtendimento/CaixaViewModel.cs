@@ -4,7 +4,6 @@ namespace IxcNet.ViewModels.Sistema.InMap.Elementos.CaixaDeAtendimento
 {
     public class CaixaViewModel
     {
-        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string? id { get; set; }
         public string? descricao { get; set; }
         public string? tipo { get; set; }

@@ -4,7 +4,6 @@ namespace IxcNet.ViewModels.Sistema.Cadastros
 {
     public class ClienteContratoViewModel
     {
-        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string? id { get; set; }
         public string? tipo { get; set; }
         public string? id_cliente { get; set; }

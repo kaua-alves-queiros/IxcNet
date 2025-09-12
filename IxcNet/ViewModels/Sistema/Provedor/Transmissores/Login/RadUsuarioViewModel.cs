@@ -4,7 +4,6 @@ namespace IxcNet.ViewModels.Sistema.Provedor.Transmissores.Login
 {
     public class RadUsuarioViewModel
     {
-        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string? id { get; set; }
         public string? autenticacao { get; set; }
         public string? tipo_conexao_mapa { get; set; }

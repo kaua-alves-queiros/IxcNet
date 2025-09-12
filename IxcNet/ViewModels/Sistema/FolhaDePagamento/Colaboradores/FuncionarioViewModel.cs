@@ -4,7 +4,6 @@ namespace IxcNet.ViewModels.Sistema.FolhaDePagamento.Colaboradores
 {
     public class FuncionarioViewModel
     {
-        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string? id { get; set; }
         public string? img_assinatura { get; set; }
         public string? ramal { get; set; }

@@ -4,7 +4,6 @@ namespace IxcNet.ViewModels.Sistema.Suporte.OrdemDeServico
 {
     public class SuOssChamadoViewModel
     {
-        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string? id { get; set; }
         public string? mensagem_resposta { get; set; }
         public string? data_hora_analise { get; set; }

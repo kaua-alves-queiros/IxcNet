@@ -4,7 +4,6 @@ namespace IxcNet.ViewModels.Sistema.Cadastros.Locais
 {
     public class CidadeViewmodel
     {
-        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string? id { get; set; }
         public string? origem { get; set; }
         public string? nome { get; set; }

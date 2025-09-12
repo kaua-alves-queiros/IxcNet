@@ -4,7 +4,6 @@ namespace IxcNet.ViewModels.Sistema.Provedor
 {
     public class RadPopRadioClienteFibraViewModel
     {
-        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string? id { get; set; }
         public string? radpop_estrutura { get; set; }
         public string? id_projeto { get; set; }

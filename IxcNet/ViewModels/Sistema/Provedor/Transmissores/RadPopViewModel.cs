@@ -4,7 +4,6 @@ namespace IxcNet.ViewModels.Sistema.Provedor.Transmissores
 {
     public class RadPopViewModel
     {
-        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string? id { get; set; }
         public string? login_hw { get; set; }
         public string? senha_hw { get; set; }
