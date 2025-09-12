@@ -1,9 +1,12 @@
-﻿using System.Text.Json.Serialization;
+﻿using IxcNet.Interfaces;
+using System.Text.Json.Serialization;
 
 namespace IxcNet.ViewModels.Sistema.FolhaDePagamento.Colaboradores
 {
-    public class FuncionarioViewModel
+    public class FuncionarioViewModel : INamedModel
     {
+        [JsonIgnore(Condition = JsonIgnoreCondition.Always)]
+        public string? ModelName => "funcionarios";
         public string? id { get; set; }
         public string? img_assinatura { get; set; }
         public string? ramal { get; set; }
@@ -102,5 +105,6 @@ namespace IxcNet.ViewModels.Sistema.FolhaDePagamento.Colaboradores
         public string? id_departamento { get; set; }
         public string? ultima_atualizacao { get; set; }
         public string? exibir_colaborador_inmap { get; set; }
+
     }
 }
