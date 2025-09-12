@@ -1,9 +1,13 @@
-﻿using System.Text.Json.Serialization;
+﻿using IxcNet.Interfaces;
+using System.Text.Json.Serialization;
 
 namespace IxcNet.ViewModels.Sistema.Cadastros
 {
-    public class ClienteViewModel
+    public class ClienteViewModel : INamedModel
     {
+        [JsonIgnore(Condition = JsonIgnoreCondition.Always)]
+        public string? ModelName => "cliente";
+
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public string? id { get; set; }
         public string? ativo { get; set; }
@@ -141,5 +145,6 @@ namespace IxcNet.ViewModels.Sistema.Cadastros
         public string? ref_pes_fone2 { get; set; }
         public string? obs { get; set; }
         public string? alerta { get; set; }
+
     }
 }
