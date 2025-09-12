@@ -1,4 +1,5 @@
 ﻿using IcNet.ViewModels;
+using IxcNet.Interfaces;
 using IxcNet.ViewModels.Sistema.Cadastros;
 using System;
 using System.Collections.Generic;
@@ -11,24 +12,20 @@ namespace IxcNet.Services
 {
     partial class IxcNetService
     {
-        public async Task<List<ClienteViewModel>?> ClienteListlAsync(QueryBuilder? query = null)
+        public async Task<List<T>?> Listar<T>(QueryBuilder query) where T : INamedModel, new()
         {
             try
             {
-                query ??= QueryBuilder.List();
+                query.ModelName = new T().ModelName;
 
-                var route = "cliente";
-                query.ModelName = route;
-
-                var response = await _http.PostAsync(route, query.GetContent());
+                var response = await _http.PostAsync(query.ModelName, query.GetContent());
                 var content = await response.Content.ReadAsStringAsync();
-                return JsonSerializer.Deserialize<IxcResponseViewModel<ClienteViewModel>>(content)!.registros!;
+                return JsonSerializer.Deserialize<IxcResponseViewModel<T>>(content)!.registros!;
             }
             catch
             {
                 return null;
             }
-
         }
     }
 }
