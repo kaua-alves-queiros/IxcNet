@@ -1,9 +1,11 @@
-﻿using System.Text.Json.Serialization;
+﻿using IxcNet.Interfaces;
+using System.Text.Json.Serialization;
 
 namespace IxcNet.ViewModels.Sistema.Suporte.Cadastro
 {
-    public class SuOssAssuntoViewModel
+    public class SuOssAssuntoViewModel : INamedModel
     {
+        public string? ModelName => "su_oss_assunto";
         public string? id { get; set; }
         public string? imprimir_prod_serv { get; set; }
         public string? modelo_email { get; set; }
@@ -84,5 +86,6 @@ namespace IxcNet.ViewModels.Sistema.Suporte.Cadastro
         public string? exige_comodato_finalizar_os { get; set; }
         public string? exige_produto_finalizar_os { get; set; }
         public string? quantidade_produtos { get; set; }
+
     }
 }
