@@ -1,9 +1,11 @@
-﻿using System.Text.Json.Serialization;
+﻿using IxcNet.Interfaces;
+using System.Text.Json.Serialization;
 
 namespace IxcNet.ViewModels.Sistema.Suporte.OrdemDeServico
 {
-    public class SuOssChamadoViewModel
+    public class SuOssChamadoViewModel : INamedModel
     {
+        public string? ModelName => "su_oss_chamado";
         public string? id { get; set; }
         public string? mensagem_resposta { get; set; }
         public string? data_hora_analise { get; set; }
