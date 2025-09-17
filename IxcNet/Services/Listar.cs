@@ -1,12 +1,7 @@
 ﻿using IcNet.ViewModels;
 using IxcNet.Interfaces;
-using IxcNet.ViewModels.Sistema.Cadastros;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace IxcNet.Services
 {
@@ -16,11 +11,16 @@ namespace IxcNet.Services
         {
             try
             {
+                query.MaxResults = "24038";
                 query.ModelName = new T().ModelName;
                 var request = new HttpRequestMessage(HttpMethod.Post, query.ModelName);
                 request.Headers.Add("ixcsoft", "listar");
+                var jsonBody = JsonSerializer.Serialize(query.GetContent());
+                request.Content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
+
                 var response = await _http.SendAsync(request);
                 var content = await response.Content.ReadAsStringAsync();
+
                 return JsonSerializer.Deserialize<IxcResponseViewModel<T>>(content)!.registros!;
             }
             catch
