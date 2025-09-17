@@ -1,134 +1,124 @@
-﻿using System.Text.Json.Serialization;
+﻿using IxcNet.Interfaces;
 
 namespace IxcNet.ViewModels.Sistema.Provedor.Transmissores.Login
 {
-    public class RadUsuarioViewModel
+    public class RadUsuarioViewModel : INamedModel
     {
-        public string? id { get; set; }
-        public string? autenticacao { get; set; }
-        public string? tipo_conexao_mapa { get; set; }
-        public string? id_integracao { get; set; }
-        public string? lte_id { get; set; }
-        public string? id_cliente { get; set; }
-        public string? id_contrato { get; set; }
-        public string? id_filial { get; set; }
-        public string? contrato_plano_venda_ { get; set; }
-        public string? id_grupo { get; set; }
-        public string? login { get; set; }
+        public string? autenticacao_por_mac { get; set; }
+        public string? relacionar_concentrador_ao_login { get; set; }
         public string? agent_circuit_id { get; set; }
-        public string? senha_md5 { get; set; }
-        public string? senha { get; set; }
-        public string? usuario_router1 { get; set; }
-        public string? senha_router1 { get; set; }
-        public string? senha_router2 { get; set; }
-        public string? ssid_router_wifi { get; set; }
-        public string? senha_rede_sem_fio { get; set; }
-        public string? ssid_router_wifi_5ghz { get; set; }
-        public string? senha_rede_sem_fio_5ghz { get; set; }
-        public string? login_simultaneo { get; set; }
-        public string? ativo { get; set; }
-        public string? online { get; set; }
-        public string? ultima_atualizacao { get; set; }
-        public string? ip { get; set; }
-        public string? ip_aviso { get; set; }
-        public string? auto_preencher_ip { get; set; }
-        public string? fixar_ip { get; set; }
-        public string? relacionar_ip_ao_login { get; set; }
-        public string? framed_pd_ipv6 { get; set; }
-        public string? framed_autopreencher_ipv6 { get; set; }
-        public string? framed_fixar_ipv6 { get; set; }
-        public string? framed_relacionar_ipv6_ao_login { get; set; }
-        public string? pd_ipv6 { get; set; }
+        public string? pool_radius { get; set; }
+        public string? id_rad_dns { get; set; }
+        public string? modelo_tranmissor { get; set; }
         public string? auto_preencher_ipv6 { get; set; }
         public string? fixar_ipv6 { get; set; }
         public string? relacionar_ipv6_ao_login { get; set; }
-        public string? mac { get; set; }
-        public string? autenticacao_por_mac { get; set; }
-        public string? autenticacao_wpa { get; set; }
-        public string? id_porta_transmissor { get; set; }
-        public string? auto_preencher_mac { get; set; }
-        public string? relacionar_mac_ao_login { get; set; }
-        public string? relacionar_concentrador_ao_login { get; set; }
-        public string? pool_radius { get; set; }
-        public string? id_radgrupos_pools { get; set; }
-        public string? id_rad_dns { get; set; }
-        public string? id_concentrador { get; set; }
-        public string? ip_concentrador { get; set; }
-        public string? Interface { get; set; }
-        public string? vlan { get; set; }
-        public string? vlan_ip_rede { get; set; }
-        public string? gw_vlan { get; set; }
-        public string? service_tag_vlan { get; set; }
-        public string? mtu { get; set; }
-        public string? concentrador { get; set; }
-        public string? conexao { get; set; }
-        public string? tipo_conexao { get; set; }
-        public string? porta_http_nas { get; set; }
-        public string? acct_session_id { get; set; }
-        public string? tipo_vinculo_plano { get; set; }
-        public string? cliente_tem_a_senha { get; set; }
-        public string? autenticacao_wps { get; set; }
-        public string? autenticacao_mac { get; set; }
-        public string? tipo_acesso { get; set; }
-        public string? porta_http { get; set; }
-        public string? porta_router2 { get; set; }
         public string? ip_aux { get; set; }
         public string? porta_aux { get; set; }
+        public string? id_radgrupos_pools { get; set; }
+        public string? service_tag_vlan { get; set; }
+        public string? acct_session_id { get; set; }
+        public string? senha_rede_sem_fio_5ghz { get; set; }
+        public string? ssid_router_wifi_5ghz { get; set; }
+        public string? mtu { get; set; }
+        public string? onu_compartilhada { get; set; }
+        public string? id_reserva_rede_neutra { get; set; }
+        public string? tipo_acesso { get; set; }
+        public string? usuario_wpa2aes { get; set; }
+        public string? senha_wpa2aes { get; set; }
+        public string? pacote_lte { get; set; }
+        public string? id_predio { get; set; }
+        public string? id { get; set; }
+        public string? ativo { get; set; }
+        public string? online { get; set; }
+        public string? tipo_conexao_mapa { get; set; }
+        public string? id_contrato { get; set; }
+        public string? id_grupo { get; set; }
+        public string? id_cliente { get; set; }
+        public string? login { get; set; }
+        public string? obs { get; set; }
+        public string? senha { get; set; }
+        public string? auto_preencher_ip { get; set; }
+        public string? ip { get; set; }
+        public string? auto_preencher_mac { get; set; }
+        public string? pd_ipv6 { get; set; }
+        public string? mac { get; set; }
+        public string? endereco { get; set; }
+        public string? numero { get; set; }
+        public string? complemento { get; set; }
+        public string? relacionar_ip_ao_login { get; set; }
+        public string? bairro { get; set; }
+        public string? relacionar_mac_ao_login { get; set; }
+        public string? conexao { get; set; }
+        public string? id_concentrador { get; set; }
+        public string? latitude { get; set; }
+        public string? longitude { get; set; }
+        public string? concentrador { get; set; }
+        public string? tipo_conexao { get; set; }
         public string? ultima_conexao_inicial { get; set; }
         public string? ultima_conexao_final { get; set; }
-        public string? motivo_desconexao { get; set; }
-        public string? count_desconexao { get; set; }
-        public string? tempo_conexao { get; set; }
+        public string? @interface { get; set; }
         public string? tempo_conectado { get; set; }
-        public string? download_atual { get; set; }
-        public string? upload_atual { get; set; }
         public string? franquia_maximo { get; set; }
         public string? franquia_consumo { get; set; }
-        public string? franquia_consumo_up { get; set; }
-        public string? franquia_atingida { get; set; }
-        public string? onu_compartilhada { get; set; }
-        public string? id_df_projeto { get; set; }
+        public string? autenticacao { get; set; }
+        public string? login_simultaneo { get; set; }
+        public string? senha_md5 { get; set; }
+        public string? fixar_ip { get; set; }
+        public string? ip_aviso { get; set; }
+        public string? porta_http { get; set; }
+        public string? porta_router2 { get; set; }
         public string? id_transmissor { get; set; }
-        public string? modelo_tranmissor { get; set; }
-        public string? interface_transmissao { get; set; }
-        public string? interface_transmissao_fibra { get; set; }
         public string? id_caixa_ftth { get; set; }
         public string? ftth_porta { get; set; }
-        public string? tronco { get; set; }
-        public string? splitter { get; set; }
+        public string? senha_router1 { get; set; }
+        public string? senha_router2 { get; set; }
+        public string? senha_rede_sem_fio { get; set; }
+        public string? id_porta_transmissor { get; set; }
+        public string? cliente_tem_a_senha { get; set; }
+        public string? franquia_atingida { get; set; }
+        public string? autenticacao_wps { get; set; }
+        public string? id_df_projeto { get; set; }
+        public string? autenticacao_mac { get; set; }
+        public string? motivo_desconexao { get; set; }
+        public string? autenticacao_wpa { get; set; }
+        public string? tempo_conexao { get; set; }
+        public string? tipo_vinculo_plano { get; set; }
+        public string? count_desconexao { get; set; }
         public string? onu_mac { get; set; }
-        public string? sinal_ultimo_atendimento { get; set; }
+        public string? vlan { get; set; }
+        public string? vlan_ip_rede { get; set; }
         public string? id_hardware { get; set; }
+        public string? id_condominio { get; set; }
         public string? tipo_equipamento { get; set; }
         public string? metragem_interna { get; set; }
         public string? metragem_externa { get; set; }
-        public string? id_reserva_rede_neutra { get; set; }
+        public string? tronco { get; set; }
+        public string? splitter { get; set; }
+        public string? sinal_ultimo_atendimento { get; set; }
+        public string? interface_transmissao { get; set; }
+        public string? franquia_consumo_up { get; set; }
         public string? endereco_padrao_cliente { get; set; }
-        public string? ponta { get; set; }
-        public string? id_condominio { get; set; }
-        public string? condominio_novo { get; set; }
-        public string? bloco { get; set; }
-        public string? bloco_novo { get; set; }
-        public string? apartamento { get; set; }
-        public string? apartamento_novo { get; set; }
-        public string? cep { get; set; }
-        public string? cep_novo { get; set; }
-        public string? endereco { get; set; }
-        public string? endereco_novo { get; set; }
-        public string? numero { get; set; }
-        public string? numero_novo { get; set; }
-        public string? bairro { get; set; }
-        public string? bairro_novo { get; set; }
         public string? cidade { get; set; }
-        public string? cidade_novo { get; set; }
+        public string? cep { get; set; }
         public string? referencia { get; set; }
-        public string? referencia_novo { get; set; }
-        public string? complemento { get; set; }
-        public string? complemento_novo { get; set; }
-        public string? latitude { get; set; }
-        public string? latitude_novo { get; set; }
-        public string? longitude { get; set; }
-        public string? longitude_novo { get; set; }
-        public string? obs { get; set; }
+        public string? ssid_router_wifi { get; set; }
+        public string? bloco { get; set; }
+        public string? apartamento { get; set; }
+        public string? usuario_router1 { get; set; }
+        public string? upload_atual { get; set; }
+        public string? download_atual { get; set; }
+        public string? gw_vlan { get; set; }
+        public string? id_filial { get; set; }
+        public string? ponta { get; set; }
+        public string? ultima_atualizacao { get; set; }
+        public string? framed_fixar_ipv6 { get; set; }
+        public string? framed_autopreencher_ipv6 { get; set; }
+        public string? framed_relacionar_ipv6_ao_login { get; set; }
+        public string? framed_pd_ipv6 { get; set; }
+        public string? lte_id { get; set; }
+        public string? id_integracao { get; set; }
+
+        public string? ModelName => "radusuarios";
     }
 }
