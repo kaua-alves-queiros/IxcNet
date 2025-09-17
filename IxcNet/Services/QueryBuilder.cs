@@ -10,15 +10,15 @@ namespace IxcNet.Services
         public string? Oper {  get; set; }
         public string MaxResults { get; set; } = "9999999999999999999999";
 
-        public MultipartFormDataContent GetContent()
+        public object GetContent()
         {
-            return new MultipartFormDataContent
+            return new
             {
-                { new StringContent($"{ModelName}.{FieldName}"), "qtype" },
-                { new StringContent($"{Query}"), "query" },
-                { new StringContent($"{Oper}"), "oper" },
-                { new StringContent("1"), "page" },
-                { new StringContent(MaxResults), "rp" }
+                qtype = $"{ModelName}.{FieldName}",
+                Query,
+                Oper,
+                page = "1",
+                rp = MaxResults,
             };
         }
 
