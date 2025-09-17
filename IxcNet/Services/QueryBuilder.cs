@@ -15,8 +15,8 @@ namespace IxcNet.Services
             return new
             {
                 qtype = $"{ModelName}.{FieldName}",
-                Query,
-                Oper,
+                query = Query,
+                oper = Oper,
                 page = "1",
                 rp = MaxResults,
             };
