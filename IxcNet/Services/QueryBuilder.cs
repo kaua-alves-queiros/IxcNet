@@ -1,13 +1,11 @@
-﻿using System.Xml.Linq;
-
-namespace IxcNet.Services
+﻿namespace IxcNet.Services
 {
     public class QueryBuilder
     {
         public string? ModelName { get; set; }
         public string? FieldName { get; set; }
         public string? Query { get; set; }
-        public string? Oper {  get; set; }
+        public string? Oper { get; set; }
         public string MaxResults { get; set; } = "9999999999999999999999";
 
         public object GetContent()

@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace IxcNet.ViewModels.Sistema.Provedor.Transmissores
+﻿namespace IxcNet.ViewModels.Sistema.Provedor.Transmissores
 {
     public class RadPopViewModel
     {

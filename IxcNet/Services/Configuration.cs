@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using System.Threading.Tasks;
 
 namespace IxcNet.Services
 {
@@ -17,7 +13,7 @@ namespace IxcNet.Services
             DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault,
         };
 
-        public IxcNetService() {}
+        public IxcNetService() { }
 
         public IxcNetService(HttpClient http) { }
         public void Setup(string host, string token)

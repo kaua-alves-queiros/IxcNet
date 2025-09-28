@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace IxcNet.ViewModels.Sistema.Cadastros.Locais
+﻿namespace IxcNet.ViewModels.Sistema.Cadastros.Locais
 {
     public class CidadeViewmodel
     {

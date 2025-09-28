@@ -1,5 +1,4 @@
 ﻿using IxcNet.Interfaces;
-using System.Text.Json.Serialization;
 
 namespace IxcNet.ViewModels.Sistema.Suporte.Cadastro
 {

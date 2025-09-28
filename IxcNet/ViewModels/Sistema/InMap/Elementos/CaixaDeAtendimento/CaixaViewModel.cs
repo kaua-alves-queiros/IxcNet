@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace IxcNet.ViewModels.Sistema.InMap.Elementos.CaixaDeAtendimento
+﻿namespace IxcNet.ViewModels.Sistema.InMap.Elementos.CaixaDeAtendimento
 {
     public class CaixaViewModel
     {

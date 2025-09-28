@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace IxcNet.ViewModels.Sistema.Provedor
+﻿namespace IxcNet.ViewModels.Sistema.Provedor
 {
     public class RadPopRadioClienteFibraViewModel
     {

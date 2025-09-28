@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace IxcNet.ViewModels.Sistema.Cadastros
+﻿namespace IxcNet.ViewModels.Sistema.Cadastros
 {
     public class ClienteContratoViewModel
     {
