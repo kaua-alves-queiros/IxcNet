@@ -18,7 +18,7 @@ namespace IxcNet.Services
         public IxcNetService(HttpClient http) { }
         public void Setup(string host, string token)
         {
-            _http.BaseAddress = new Uri(host + "/webservice/v1/");
+            _http.BaseAddress = new Uri("https://" + host + "/webservice/v1/");
             _http.DefaultRequestHeaders.Add("Authorization", "Basic " + Convert.ToBase64String(Encoding.UTF8.GetBytes(token)));
         }
     }
