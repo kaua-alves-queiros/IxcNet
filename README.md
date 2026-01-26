@@ -5,7 +5,7 @@ O **IxcNet** é um SDK (Software Development Kit) independente, desenvolvido par
 Este projeto visa abstrair a complexidade das requisições HTTP e fornecer uma interface amigável e tipada para manipular os recursos do sistema IXC.
 
 > [!IMPORTANT]
-> **Aviso de Isenção:** Este projeto é uma iniciativa independente e **não possui vínculo oficial** com a empresa IXC Soft. O desenvolvimento e suporte são mantidos exclusivamente por [Kaua Alves Queiroz](https://github.com/seu-usuario-aqui).
+> **Aviso de Isenção:** Este projeto é uma iniciativa independente e **não possui vínculo oficial** com a empresa IXC Soft. O desenvolvimento e suporte são mantidos exclusivamente por [Kaua Alves Queiroz](https://github.com/kaua-alves-queiros).
 
 ---
 
