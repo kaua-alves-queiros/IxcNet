@@ -15,10 +15,29 @@ namespace IxcNet.Services
         public async Task<HttpStatusCode> Inserir<T>(T model) where T : INamedModel
         {
             var route = model.ModelName;
-            var response = await _http.PostAsJsonAsync(route, model, _jsonOptions);
-            var content = await response.Content.ReadAsStringAsync();
-            Console.WriteLine(content);
-            return response.StatusCode;
+            try
+            {
+                _logger?.LogInformation("Tentando inserir novo registro no modelo {ModelName}", route);
+                
+                var response = await _http.PostAsJsonAsync(route, model, _jsonOptions);
+                var content = await response.Content.ReadAsStringAsync();
+                
+                if (response.IsSuccessStatusCode)
+                {
+                    _logger?.LogInformation("Registro inserido com sucesso no modelo {ModelName}. Resposta: {Content}", route, content);
+                }
+                else
+                {
+                    _logger?.LogWarning("Falha ao inserir registro no modelo {ModelName}. Status: {StatusCode}, Resposta: {Content}", route, response.StatusCode, content);
+                }
+
+                return response.StatusCode;
+            }
+            catch (Exception ex)
+            {
+                _logger?.LogError(ex, "Erro inesperado ao realizar inserção no modelo {ModelName}", route);
+                return HttpStatusCode.InternalServerError;
+            }
         }
     }
 }
