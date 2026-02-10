@@ -46,7 +46,7 @@ Este roadmap descreve as etapas planejadas para evolução do **IxcNet**.
 
 ### 🔹 Fase 2 — Expansão de Endpoints (Médio Prazo)
 - [ ] 🔌 Cobertura funcional da API
-  - [ ] Adicionar action de build da documentação DocFX
+  - [x] Adicionar action de build da documentação DocFX
   - [ ] Adição de métodos Alterar e Excluir
   - [ ] Finalização dos endpoints já iniciados
   - [ ] Implementação de cadastros de clientes e contratos
