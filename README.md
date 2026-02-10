@@ -2,7 +2,7 @@
 
 O **IxcNet** é um SDK (Software Development Kit) independente, desenvolvido para facilitar a integração e comunicação de aplicações externas com a API do software **IXC Provedor**.
 
-📖 **[Acesse a Documentação Oficial](https://kaua-alves-queiros.github.io/IxcNet/)**
+📖 **[Documentação Oficial](https://kaua-alves-queiros.github.io/IxcNet/)** | 🌐 **[DeepWiki](https://deepwiki.com/kaua-alves-queiros/IxcNet/1-overview)**
 
 Este projeto visa abstrair a complexidade das requisições HTTP e fornecer uma interface amigável, tipada e extensível para manipular os recursos do sistema IXC.
 

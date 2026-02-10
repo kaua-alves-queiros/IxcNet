@@ -27,6 +27,7 @@ O **IxcNet** é uma biblioteca desenvolvida em .NET 8 para simplificar a comunic
 ### Links Úteis 🔗
 
 *   **Repositório Oficial:** [GitHub - IxcNet](https://github.com/kaua-alves-queiros/IxcNet)
+*   **Wiki do Projeto:** [DeepWiki - IxcNet](https://deepwiki.com/kaua-alves-queiros/IxcNet/1-overview)
 *   **Issues / Sugestões:** [Reportar um problema](https://github.com/kaua-alves-queiros/IxcNet/issues)
 
 ---
