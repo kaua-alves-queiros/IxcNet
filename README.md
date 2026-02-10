@@ -21,6 +21,7 @@ Funcionalidade (Endpoint) | Status | Testado
 /Sistema/InMap/Elementos/CaixaDeAtendimento/Caixa | 🛠️ Parcialmente Desenvolvido | ❌ Não
 /Sistema/Provedor/ClienteFibra | 🛠️ Parcialmente Desenvolvido | ❌ Não
 /Sistema/Provedor/Transmissores/RadPop | 🛠️ Parcialmente Desenvolvido | ❌ Não
+/Sistema/Provedor/Transmissores/Login/Radusuario | ⚠️ Em teste | ❌ Não
 /Sistema/Provedor/Login/Login/LoginSimples | 🛠️ Parcialmente Desenvolvido | ❌ Não
 /Sistema/Provedor/Suporte/Cadastro/Assunto | ⚠️ Em teste | ❌ Não
 /Sistema/Provedor/Suporte/Cadastro/OrdemDeServico/SuOssChamado | ⚠️ Em teste | ❌ Não
