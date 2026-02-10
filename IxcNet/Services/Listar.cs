@@ -7,6 +7,12 @@ namespace IxcNet.Services
 {
     partial class IxcNetService
     {
+        /// <summary>
+        /// Lista registros de um determinado modelo na API do IXC.
+        /// </summary>
+        /// <typeparam name="T">O tipo do modelo que deve implementar <see cref="INamedModel"/> e ter um construtor sem parâmetros.</typeparam>
+        /// <param name="query">O objeto <see cref="QueryBuilder"/> contendo os filtros, ordenação e limite.</param>
+        /// <returns>Uma lista de objetos do tipo <typeparamref name="T"/>, ou <c>null</c> em caso de erro.</returns>
         public async Task<List<T>?> Listar<T>(QueryBuilder query) where T : INamedModel, new()
         {
             try
