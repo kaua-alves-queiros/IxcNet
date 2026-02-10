@@ -1,6 +1,8 @@
 ﻿using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Microsoft.Extensions.Logging;
+
 
 namespace IxcNet.Services
 {
@@ -14,6 +16,11 @@ namespace IxcNet.Services
         /// Define a condição de ignorância para o serializador JSON.
         /// </summary>
         private static JsonIgnoreCondition JsonIgnoreCondition;
+
+        /// <summary>
+        /// Instância para registro de logs e monitoramento.
+        /// </summary>
+        private readonly ILogger? _logger;
 
         /// <summary>
         /// Instância do <see cref="HttpClient"/> utilizada para realizar as requisições HTTP para a API.
@@ -31,16 +38,23 @@ namespace IxcNet.Services
         /// <summary>
         /// Inicializa uma nova instância da classe <see cref="IxcNetService"/>.
         /// </summary>
-        public IxcNetService() { }
+        /// <param name="logger">Opcional: Instância de logger para monitoramento.</param>
+        public IxcNetService(ILogger<IxcNetService>? logger = null)
+        {
+            _logger = logger;
+        }
 
         /// <summary>
         /// Inicializa uma nova instância da classe <see cref="IxcNetService"/> com um <see cref="HttpClient"/> customizado.
         /// </summary>
         /// <param name="http">A instância de <see cref="HttpClient"/> a ser utilizada.</param>
-        public IxcNetService(HttpClient http)
+        /// <param name="logger">Opcional: Instância de logger para monitoramento.</param>
+        public IxcNetService(HttpClient http, ILogger<IxcNetService>? logger = null)
         {
             _http = http;
+            _logger = logger;
         }
+
 
         /// <summary>
         /// Configura as credenciais e o endereço base para as requisições à API do IXCSoft.
