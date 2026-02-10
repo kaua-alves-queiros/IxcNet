@@ -38,7 +38,7 @@ Este roadmap descreve as etapas planejadas para evolução do **IxcNet**.
 - [ ] 🧱 Estrutura base do SDK
   - [x] Padronização da estrutura do SDK
   - [x] Client HTTP centralizado
-  - [ ] Tratamento global de erros e exceções
+  - [x] Tratamento global de erros e exceções
   - [x] Mecanismo de autenticação reutilizável
   - [x] Criação e refinamento de DTOs
   - [x] Documentação inicial
@@ -46,6 +46,7 @@ Este roadmap descreve as etapas planejadas para evolução do **IxcNet**.
 
 ### 🔹 Fase 2 — Expansão de Endpoints (Médio Prazo)
 - [ ] 🔌 Cobertura funcional da API
+  - [ ] Adicionar action de build da documentação DocFX
   - [ ] Adição de métodos Alterar e Excluir
   - [ ] Finalização dos endpoints já iniciados
   - [ ] Implementação de cadastros de clientes e contratos
