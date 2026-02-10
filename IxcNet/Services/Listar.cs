@@ -11,7 +11,6 @@ namespace IxcNet.Services
         {
             try
             {
-                query.MaxResults = "24038";
                 query.ModelName = new T().ModelName;
                 var request = new HttpRequestMessage(HttpMethod.Post, query.ModelName);
                 request.Headers.Add("ixcsoft", "listar");
