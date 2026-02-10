@@ -1,6 +1,8 @@
 ﻿using IxcNet.Interfaces;
 using System.Net;
 using System.Net.Http.Json;
+using Microsoft.Extensions.Logging;
+
 
 namespace IxcNet.Services
 {
