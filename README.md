@@ -40,7 +40,7 @@ Este roadmap descreve as etapas planejadas para evolução do **IxcNet**.
   - [x] Client HTTP centralizado
   - [ ] Tratamento global de erros e exceções
   - [x] Mecanismo de autenticação reutilizável
-  - [ ] Criação e refinamento de DTOs
+  - [x] Criação e refinamento de DTOs
   - [x] Documentação inicial
   - [ ] Adição de logs nos métodos Listar, Inserir
 
