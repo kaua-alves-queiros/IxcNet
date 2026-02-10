@@ -41,10 +41,12 @@ Este roadmap descreve as etapas planejadas para evolução do **IxcNet**.
   - [ ] Tratamento global de erros e exceções
   - [x] Mecanismo de autenticação reutilizável
   - [ ] Criação e refinamento de DTOs
-  - [ ] Documentação inicial
+  - [x] Documentação inicial
+  - [ ] Adição de logs nos métodos Listar, Inserir
 
 ### 🔹 Fase 2 — Expansão de Endpoints (Médio Prazo)
 - [ ] 🔌 Cobertura funcional da API
+  - [ ] Adição de métodos Alterar e Excluir
   - [ ] Finalização dos endpoints já iniciados
   - [ ] Implementação de cadastros de clientes e contratos
   - [ ] Implementação de endereços e localidades
@@ -74,6 +76,70 @@ Este roadmap descreve as etapas planejadas para evolução do **IxcNet**.
   - [ ] Templates de Issue e Pull Request
   - [ ] Roadmap versionado
     - [ ] Evolução baseada em feedback
+
+---
+
+## 📖 Guia de Uso
+
+### 1. Configuração (`IxcNetService`)
+
+Para começar a usar o **IxcNet**, você precisa instanciar o `IxcNetService` e configurá-lo com as credenciais da sua API IXC.
+
+```csharp
+using IxcNet.Services;
+
+// Instancia o serviço
+var ixcService = new IxcNetService();
+
+// Configura o host e o token
+// O host deve ser apenas o domínio ou IP (sem https://)
+// O token é o token do webservice gerado no IXC Provedor
+ixcService.Setup("seu_provedor.ixcsoft.com.br", "seu_token_aqui");
+```
+
+### 2. Listagem de Registros (`Listar`)
+
+Para buscar dados, utilize o método `Listar<T>`, passando um `QueryBuilder` com os filtros desejados.
+
+```csharp
+using IxcNet.ViewModels;
+using IxcNet.Models; // Onde estão seus modelos (ex: Cliente)
+
+var query = new QueryBuilder();
+query.AddFilter("razao", "LIKE", "João%"); // Filtro opcional
+query.Page = 1;
+query.Rp = 10; // Registros por página
+
+var clientes = await ixcService.Listar<Cliente>(query);
+
+if (clientes != null)
+{
+    foreach (var cliente in clientes)
+    {
+        Console.WriteLine(cliente.Razao);
+    }
+}
+```
+
+### 3. Inserção de Registros (`Inserir`)
+
+Para criar novos registros, utilize o método `Inserir<T>`.
+
+```csharp
+var novoCliente = new Cliente 
+{ 
+    Razao = "Novo Cliente LTDA",
+    Cnpj_Cpf = "12.345.678/0001-99"
+    // ... preencha outros campos obrigatórios
+};
+
+var status = await ixcService.Inserir(novoCliente);
+
+if (status == System.Net.HttpStatusCode.OK)
+{
+    Console.WriteLine("Cliente inserido com sucesso!");
+}
+```
 
 ---
 
