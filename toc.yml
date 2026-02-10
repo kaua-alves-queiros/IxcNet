@@ -1,4 +1,5 @@
 - name: Documentação
   href: Docs/
 - name: Referência da API
-  href: api/
+  href: Docs/api-reference.md
+  topicHref: api/toc.yml
