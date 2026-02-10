@@ -10,9 +10,20 @@ namespace IxcNet.Services
     /// </summary>
     public partial class IxcNetService
     {
-        private static JsonIgnoreCondition JsonIgnoreCOndition;
-        HttpClient _http = new();
-        JsonSerializerOptions _jsonOptions = new JsonSerializerOptions
+        /// <summary>
+        /// Define a condição de ignorância para o serializador JSON.
+        /// </summary>
+        private static JsonIgnoreCondition JsonIgnoreCondition;
+
+        /// <summary>
+        /// Instância do <see cref="HttpClient"/> utilizada para realizar as requisições HTTP para a API.
+        /// </summary>
+        private HttpClient _http = new();
+
+        /// <summary>
+        /// Opções de configuração para o serializador JSON.
+        /// </summary>
+        private JsonSerializerOptions _jsonOptions = new JsonSerializerOptions
         {
             DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault,
         };
@@ -23,16 +34,19 @@ namespace IxcNet.Services
         public IxcNetService() { }
 
         /// <summary>
-        /// Inicializa uma nova instância da classe <see cref="IxcNetService"/> com um HttpClient customizado.
+        /// Inicializa uma nova instância da classe <see cref="IxcNetService"/> com um <see cref="HttpClient"/> customizado.
         /// </summary>
-        /// <param name="http">Instância de HttpClient.</param>
-        public IxcNetService(HttpClient http) { }
+        /// <param name="http">A instância de <see cref="HttpClient"/> a ser utilizada.</param>
+        public IxcNetService(HttpClient http)
+        {
+            _http = http;
+        }
 
         /// <summary>
-        /// Configura as credenciais e o host para as requisições à API do IXC.
+        /// Configura as credenciais e o endereço base para as requisições à API do IXCSoft.
         /// </summary>
-        /// <param name="host">O endereço do host (ex: servidor.ixcsoft.com.br).</param>
-        /// <param name="token">O token de autenticação (API Token).</param>
+        /// <param name="host">O endereço do host do webservice (ex: provedor.ixcsoft.com.br).</param>
+        /// <param name="token">O token de API utilizado para autenticação Basic.</param>
         public void Setup(string host, string token)
         {
             _http.BaseAddress = new Uri("https://" + host + "/webservice/v1/");
