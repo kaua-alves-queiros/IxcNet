@@ -18,7 +18,7 @@ O **IxcNet** é uma biblioteca desenvolvida em .NET 8 para simplificar a comunic
   <div class="col-md-6">
     <h4>Referência de API</h4>
     <p>Documentação técnica detalhada de todas as classes, métodos e modelos (ViewModels) disponíveis no SDK.</p>
-    <a href="/Docs/api-reference.html" class="btn btn-outline-primary">Ver API</a>
+    <a href="Docs/api-reference.html" class="btn btn-outline-primary">Ver API</a>
   </div>
 </div>
 
