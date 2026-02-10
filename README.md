@@ -35,14 +35,14 @@ Funcionalidade (Endpoint) | Status | Testado
 Este roadmap descreve as etapas planejadas para evolução do **IxcNet**.
 
 ### 🔹 Fase 1 — Consolidação da Base (Curto Prazo)
-- [ ] 🧱 Estrutura base do SDK
+- [x] 🧱 Estrutura base do SDK
   - [x] Padronização da estrutura do SDK
   - [x] Client HTTP centralizado
   - [x] Tratamento global de erros e exceções
   - [x] Mecanismo de autenticação reutilizável
   - [x] Criação e refinamento de DTOs
   - [x] Documentação inicial
-  - [ ] Adição de logs nos métodos Listar, Inserir
+  - [x] Adição de logs nos métodos Listar, Inserir
 
 ### 🔹 Fase 2 — Expansão de Endpoints (Médio Prazo)
 - [ ] 🔌 Cobertura funcional da API
