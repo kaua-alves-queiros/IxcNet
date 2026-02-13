@@ -55,7 +55,7 @@ Este roadmap descreve as etapas planejadas para evolução do **IxcNet**.
   - [ ] Implementação de endereços e localidades
   - [ ] Implementação de suporte e ordens de serviço
   - [ ] Versionamento interno dos módulos
-  - [ ] Testes unitários básicos
+  - [x] Testes unitários básicos
 
 ### 🔹 Fase 3 — Qualidade e Estabilidade
 - [ ] 🧪 Robustez e confiabilidade
