@@ -12,9 +12,19 @@ Este projeto visa abstrair a complexidade das requisições HTTP e fornecer uma 
 
 ## 📋 Status de Desenvolvimento
 
-Abaixo estão as rotas da funcionalidades que já estão sendo mapeadas e seus respectivos status de implementação:
+Abaixo estão as rotas e as  funcionalidades que já estão sendo mapeadas e seus respectivos status de implementação:
 
-Funcionalidade (Endpoint) | Status | Testado
+Funcionalidade  | Status | Testado
+------------------------- | ------ | -------
+Setup | ✅ Funcional | ✅ Sim
+QueryBuilder | ✅ Funcional | ✅ Sim
+Inserir | ✅ Funcional | ✅ Sim
+Listar | ✅ Funcional | ✅ Sim
+Deletar | ❌ Não Implementado | ❌ Não
+Alterar | ❌ Não Implementado | ❌ Não
+
+
+Endpoint | Status | Testado
 ------------------------- | ------ | -------
 /Sistema/Cadastro/Cliente | ⚠️ Em teste | ❌ Não
 /Sistema/Cadastro/Cliente-Contrato | 🛠️ Parcialmente Desenvolvido | ❌ Não
