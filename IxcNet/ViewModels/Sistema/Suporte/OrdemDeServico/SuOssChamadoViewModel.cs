@@ -1,6 +1,4 @@
 ﻿using IxcNet.Interfaces;
-using IxcNet.ViewModels.Sistema.Suporte.OrdemDeServico.IxcNet.ViewModels.Sistema.Suporte;
-using System.Runtime.Intrinsics.X86;
 
 namespace IxcNet.ViewModels.Sistema.Suporte.OrdemDeServico
 {
