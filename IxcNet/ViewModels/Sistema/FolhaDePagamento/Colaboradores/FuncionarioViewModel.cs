@@ -5,18 +5,9 @@ namespace IxcNet.ViewModels.Sistema.FolhaDePagamento.Colaboradores
 {
     public class FuncionarioViewModel : INamedModel
     {
-        [JsonIgnore(Condition = JsonIgnoreCondition.Always)]
         public string? ModelName => "funcionarios";
+
         public string? id { get; set; }
-        public string? img_assinatura { get; set; }
-        public string? ramal { get; set; }
-        public string? envia_telegram_os { get; set; }
-        public string? telegram_chat_id_funcionario { get; set; }
-        public string? id_chat_telegram_funcionario { get; set; }
-        public string? id_perfil_jornada_trabalho { get; set; }
-        public string? rastreador { get; set; }
-        public string? ferias_colaborador { get; set; }
-        public string? id_conta_decimo { get; set; }
         public string? funcionario { get; set; }
         public string? ativo { get; set; }
         public string? id_funcao { get; set; }
@@ -24,12 +15,13 @@ namespace IxcNet.ViewModels.Sistema.FolhaDePagamento.Colaboradores
         public string? id_conta { get; set; }
         public string? email { get; set; }
         public string? coeficiente { get; set; }
-        public string? cor_mapa { get; set; }
+        public string? id_veiculo_padrao { get; set; }
         public string? filial_id { get; set; }
+        public string? cor_mapa { get; set; }
         public string? data_nascimento { get; set; }
         public string? data_admissao { get; set; }
-        public string? id_conta_salario { get; set; }
         public string? envia_email_os { get; set; }
+        public string? id_conta_salario { get; set; }
         public string? envia_sms_os { get; set; }
         public string? integracao_calendario { get; set; }
         public string? id_setor_padrao { get; set; }
@@ -105,6 +97,31 @@ namespace IxcNet.ViewModels.Sistema.FolhaDePagamento.Colaboradores
         public string? id_departamento { get; set; }
         public string? ultima_atualizacao { get; set; }
         public string? exibir_colaborador_inmap { get; set; }
-
+        public string? tipo_chave_pix { get; set; }
+        public string? chave_pix { get; set; }
+        public string? mostrar_no_quadro_kanban { get; set; }
+        public string? tipo_documento_identificacao_col { get; set; }
+        public string? regra_centro_rateio { get; set; }
+        public string? id_centro_custo_criterio_rateio { get; set; }
+        public string? id_centro_custo_rel_centro_custo_categoria { get; set; }
+        public string? id_centro_custo_categoria_filtro { get; set; }
+        public string? img_assinatura { get; set; }
+        public string? ramal { get; set; }
+        public string? envia_telegram_os { get; set; }
+        public string? telegram_chat_id_funcionario { get; set; }
+        public string? id_chat_telegram_funcionario { get; set; }
+        public string? id_perfil_jornada_trabalho { get; set; }
+        public string? rastreador { get; set; }
+        public string? ferias_colaborador { get; set; }
+        public string? id_conta_decimo { get; set; }
+        public string? rastreador_tipo { get; set; }
+        public string? maximo_os_dia { get; set; }
+        public string? ctps_seleciona { get; set; }
+        public string? cpf_seleciona { get; set; }
+        public string? pis_seleciona { get; set; }
+        public string? rg_seleciona { get; set; }
+        public string? cnh_seleciona { get; set; }
+        public string? titulo_eleitoral_seleciona { get; set; }
+        public string? obrigar_marcar_quilometragem { get; set; }
     }
 }

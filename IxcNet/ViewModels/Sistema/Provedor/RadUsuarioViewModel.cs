@@ -1,6 +1,6 @@
 ﻿using IxcNet.Interfaces;
 
-namespace IxcNet.ViewModels.Sistema.Provedor.Transmissores.Login
+namespace IxcNet.ViewModels.Sistema.Provedor
 {
     public class RadUsuarioViewModel : INamedModel
     {
