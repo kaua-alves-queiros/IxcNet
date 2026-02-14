@@ -85,6 +85,14 @@ namespace IxcNet.ViewModels.Sistema.Suporte.Cadastro
         public string? exige_comodato_finalizar_os { get; set; }
         public string? exige_produto_finalizar_os { get; set; }
         public string? quantidade_produtos { get; set; }
+        public string? conceder_desconto_login_regiao_manutencao { get; set; }
+        public string? mostrar_checklist_analise_risco { get; set; }
+        public string? id_questionario_analise_risco { get; set; }
+        public string? obrigar_preenchimento_canal_atendimento { get; set; }
+        public string? obrigatorio_status_complementar { get; set; }
+        public string? habilita_assinatura_cliente { get; set; }
+        public string? id_feedback { get; set; }
+        public string? prioridade_padrao { get; set; }
 
     }
 }
