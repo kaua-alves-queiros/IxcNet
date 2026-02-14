@@ -1,6 +1,6 @@
 ﻿namespace IxcNet.ViewModels.Sistema.Provedor.Transmissores
 {
-    public class RadPopViewModel
+    public class Radusuario
     {
         public string? id { get; set; }
         public string? login_hw { get; set; }
