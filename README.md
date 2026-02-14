@@ -26,19 +26,19 @@ Alterar | ❌ Não Implementado | ❌ Não
 
 Endpoint | Status | Testado
 ------------------------- | ------ | -------
-/Sistema/Cadastro/Cliente | ⚠️ Em teste | ❌ Não
-/Sistema/Cadastro/Cliente-Contrato | 🛠️ Parcialmente Desenvolvido | ❌ Não
-/Sistema/Cadastro/Locais/Cidade | 🛠️ Parcialmente Desenvolvido | ❌ Não
-/Sistema/FolhaDePagamento/Colaboradores/Funcionario | ⚠️ Em teste | ❌ Não
-/Sistema/InMap/Elementos/CaixaDeAtendimento/Caixa | 🛠️ Parcialmente Desenvolvido | ❌ Não
-/Sistema/Provedor/ClienteFibra | 🛠️ Parcialmente Desenvolvido | ❌ Não
-/Sistema/Provedor/Transmissores/RadPop | 🛠️ Parcialmente Desenvolvido | ❌ Não
-/Sistema/Provedor/Transmissores/Login/Radusuario | ⚠️ Em teste | ❌ Não
-/Sistema/Provedor/Login/Login/LoginSimples | 🛠️ Parcialmente Desenvolvido | ❌ Não
-/Sistema/Provedor/Suporte/Cadastro/Assunto | ⚠️ Em teste | ❌ Não
-/Sistema/Provedor/Suporte/Cadastro/OrdemDeServico/SuOssChamado | ⚠️ Em teste | ❌ Não
+/Sistema/Cadastro/Cliente | ✅ Implementado | ✅ Sim
+/Sistema/Cadastro/Cliente-Contrato | ✅ Implementado | ✅ Sim
+/Sistema/Cadastro/Locais/Cidade | ✅ Implementado | ✅ Sim
+/Sistema/FolhaDePagamento/Colaboradores/Funcionario | ✅ Implementado | ✅ Sim
+/Sistema/InMap/Elementos/CaixaDeAtendimento/Caixa | ✅ Implementado | ✅ Sim
+/Sistema/Provedor/ClienteFibra | ✅ Implementado | ✅ Sim
+/Sistema/Provedor/Transmissores/RadPop | ✅ Implementado | ✅ Sim
+/Sistema/Provedor/Transmissores/Login/Radusuario | ✅ Implementado | ✅ Sim
+/Sistema/Provedor/Login/Login/LoginSimples | ✅ Implementado | ✅ Sim
+/Sistema/Provedor/Suporte/Cadastro/Assunto | ✅ Implementado | ✅ Sim
+/Sistema/Provedor/Suporte/Cadastro/OrdemDeServico/SuOssChamado | ✅ Implementado | ✅ Sim
 
-ℹ️ *Nota: Demais funcionalidades da API do IXC estão atualmente pendentes.*
+ℹ️ *Nota: Todos os modelos acima possuem testes de sanidade automatizados.*
 
 ---
 
@@ -55,6 +55,7 @@ Este roadmap descreve as etapas planejadas para evolução do **IxcNet**.
   - [x] Criação e refinamento de DTOs
   - [x] Documentação inicial
   - [x] Adição de logs nos métodos Listar, Inserir
+  - [x] Pipeline de CI/CD (GitHub Actions)
 
 ### 🔹 Fase 2 — Expansão de Endpoints (Médio Prazo)
 - [ ] 🔌 Cobertura funcional da API
@@ -68,9 +69,9 @@ Este roadmap descreve as etapas planejadas para evolução do **IxcNet**.
 
 ### 🔹 Fase 3 — Qualidade e Estabilidade
 - [ ] 🧪 Robustez e confiabilidade
-  - [ ] Testes automatizados
-  - [ ] Mock da API IXC
-  - [ ] Padronização de respostas e exceções
+  - [x] Testes automatizados
+  - [x] Mock da API IXC
+  - [x] Padronização de respostas e exceções
   - [ ] Validação de payloads
   - [ ] Sistema de logging configurável
 
