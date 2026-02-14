@@ -28,13 +28,15 @@ Endpoint | Status | Testado
 ------------------------- | ------ | -------
 /Sistema/Cadastro/Cliente | ✅ Implementado | ✅ Sim
 /Sistema/Cadastro/Cliente-Contrato | ✅ Implementado | ✅ Sim
+/Sistema/Cadastro/Clientes/Cliente-Condominio | ✅ Implementado | ✅ Sim
+/Sistema/Cadastro/Estruturas | ✅ Implementado | ✅ Sim
 /Sistema/Cadastro/Locais/Cidade | ✅ Implementado | ✅ Sim
 /Sistema/FolhaDePagamento/Colaboradores/Funcionario | ✅ Implementado | ✅ Sim
+/Sistema/FolhaDePagamento/Setor | ✅ Implementado | ✅ Sim
 /Sistema/InMap/Elementos/CaixaDeAtendimento/Caixa | ✅ Implementado | ✅ Sim
-/Sistema/Provedor/ClienteFibra | ✅ Implementado | ✅ Sim
-/Sistema/Provedor/Transmissores/RadPop | ✅ Implementado | ✅ Sim
 /Sistema/Provedor/Transmissores/Login/Radusuario | ✅ Implementado | ✅ Sim
-/Sistema/Provedor/Login/Login/LoginSimples | ✅ Implementado | ✅ Sim
+/Sistema/Suporte/Atendimento/SuTicket | ✅ Implementado | ✅ Sim
+/Sistema/Suporte/Cadastro/SuDiagnostico | ✅ Implementado | ✅ Sim
 /Sistema/Provedor/Suporte/Cadastro/Assunto | ✅ Implementado | ✅ Sim
 /Sistema/Provedor/Suporte/Cadastro/OrdemDeServico/SuOssChamado | ✅ Implementado | ✅ Sim
 
