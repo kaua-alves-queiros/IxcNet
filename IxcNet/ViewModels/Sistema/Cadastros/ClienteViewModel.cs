@@ -5,84 +5,82 @@ namespace IxcNet.ViewModels.Sistema.Cadastros
 {
     public class ClienteViewModel : INamedModel
     {
-        [JsonIgnore(Condition = JsonIgnoreCondition.Always)]
         public string? ModelName => "cliente";
 
         public string? id { get; set; }
         public string? ativo { get; set; }
-        public string? id_tipo_cliente { get; set; }
-        public string? tipo_cliente_scm { get; set; }
-        public string? tipo_pessoa { get; set; }
         public string? razao { get; set; }
         public string? fantasia { get; set; }
         public string? cnpj_cpf { get; set; }
+        public string? tipo_pessoa { get; set; }
         public string? ie_identidade { get; set; }
-        public string? contribuinte_icms { get; set; }
         public string? rg_orgao_emissor { get; set; }
-        public string? nacionalidade { get; set; }
-        public string? cidade_naturalidade { get; set; }
-        public string? estado_nascimento { get; set; }
+        public string? tipo_documento_identificacao { get; set; }
+        public string? nome_social { get; set; }
+        public string? Sexo { get; set; }
         public string? data_nascimento { get; set; }
-        public string? profissao { get; set; }
         public string? estado_civil { get; set; }
-        public string? inscricao_municipal { get; set; }
-        public string? isuf { get; set; }
-        public string? tipo_assinante { get; set; }
-        public string? filial_id { get; set; }
-        public string? filtra_filial { get; set; }
-        public string? idx { get; set; }
-        public string? ativo_serasa { get; set; }
-        public string? convert_cliente_forn { get; set; }
-        public string? atualizar_cadastro_galaxPay { get; set; }
-        public string? id_condominio { get; set; }
-        public string? bloco { get; set; }
-        public string? apartamento { get; set; }
-        public string? cep { get; set; }
-        public string? cif { get; set; }
+        public string? nacionalidade { get; set; }
+        public string? profissao { get; set; }
+        public string? grau_satisfacao { get; set; }
         public string? endereco { get; set; }
         public string? numero { get; set; }
         public string? complemento { get; set; }
         public string? bairro { get; set; }
         public string? cidade { get; set; }
-        public string? referencia { get; set; }
         public string? uf { get; set; }
+        public string? cep { get; set; }
+        public string? referencia { get; set; }
         public string? tipo_localidade { get; set; }
         public string? latitude { get; set; }
         public string? longitude { get; set; }
-        public string? cep_cob { get; set; }
+        public string? id_condominio { get; set; }
+        public string? bloco { get; set; }
+        public string? apartamento { get; set; }
+        public string? fone { get; set; }
+        public string? telefone_comercial { get; set; }
+        public string? telefone_celular { get; set; }
+        public string? whatsapp { get; set; }
+        public string? ramal { get; set; }
+        public string? email { get; set; }
+        public string? hotsite_email { get; set; }
+        public string? contato { get; set; }
+        public string? skype { get; set; }
+        public string? facebook { get; set; }
+        public string? cond_pagamento { get; set; }
+        public string? id_conta { get; set; }
+        public string? participa_cobranca { get; set; }
+        public string? participa_pre_cobranca { get; set; }
+        public string? num_dias_cob { get; set; }
+        public string? cob_envia_email { get; set; }
+        public string? cob_envia_sms { get; set; }
+        public string? regua_cobranca_wpp { get; set; }
+        public string? regua_cobranca_notificacao { get; set; }
+        public string? regua_cobranca_considera { get; set; }
+        public string? deb_automatico { get; set; }
+        public string? deb_agencia { get; set; }
+        public string? deb_conta { get; set; }
+        public string? tipo_pessoa_titular_conta { get; set; }
+        public string? cnpj_cpf_titular_conta { get; set; }
+        public string? contribuinte_icms { get; set; }
+        public string? pis_retem { get; set; }
+        public string? cofins_retem { get; set; }
+        public string? csll_retem { get; set; }
+        public string? irrf_retem { get; set; }
+        public string? inss_retem { get; set; }
+        public string? cli_desconta_iss_retido_total { get; set; }
+        public string? desconto_irrf_valor_inferior { get; set; }
+        public string? percentual_reducao { get; set; }
         public string? endereco_cob { get; set; }
         public string? numero_cob { get; set; }
         public string? bairro_cob { get; set; }
         public string? cidade_cob { get; set; }
-        public string? complemento_cob { get; set; }
-        public string? referencia_cob { get; set; }
         public string? uf_cob { get; set; }
-        public string? fone { get; set; }
-        public string? telefone_comercial { get; set; }
-        public string? ramal { get; set; }
-        public string? id_operadora_celular { get; set; }
-        public string? telefone_celular { get; set; }
-        public string? whatsapp { get; set; }
-        public string? email { get; set; }
-        public string? contato { get; set; }
-        public string? website { get; set; }
-        public string? skype { get; set; }
-        public string? facebook { get; set; }
-        public string? hotsite_email { get; set; }
-        public string? senha { get; set; }
-        public string? acesso_automatico_central { get; set; }
-        public string? alterar_senha_primeiro_acesso { get; set; }
-        public string? senha_hotsite_md5 { get; set; }
-        public string? hotsite_acesso { get; set; }
-        public string? crm { get; set; }
-        public string? id_candato_tipo { get; set; }
-        public string? id_campanha { get; set; }
-        public string? id_concorrente { get; set; }
-        public string? id_perfil { get; set; }
-        public string? responsavel { get; set; }
-        public string? indicado_por { get; set; }
-        public string? cadastrado_via_viabilidade { get; set; }
+        public string? cep_cob { get; set; }
+        public string? referencia_cob { get; set; }
+        public string? complemento_cob { get; set; }
         public string? status_prospeccao { get; set; }
+        public string? crm { get; set; }
         public string? crm_data_novo { get; set; }
         public string? crm_data_sondagem { get; set; }
         public string? crm_data_apresentando { get; set; }
@@ -90,60 +88,71 @@ namespace IxcNet.ViewModels.Sistema.Cadastros
         public string? crm_data_vencemos { get; set; }
         public string? crm_data_perdemos { get; set; }
         public string? crm_data_abortamos { get; set; }
-        public string? crm_data_sem_porta_disponivel { get; set; }
         public string? crm_data_sem_viabilidade { get; set; }
-        public string? foto_cartao { get; set; }
-        public string? participa_cobranca { get; set; }
-        public string? num_dias_cob { get; set; }
-        public string? participa_pre_cobranca { get; set; }
-        public string? cob_envia_email { get; set; }
-        public string? cob_envia_sms { get; set; }
-        public string? id_conta { get; set; }
-        public string? cond_pagamento { get; set; }
-        public string? id_vendedor { get; set; }
-        public string? tabela_preco { get; set; }
-        public string? deb_automatico { get; set; }
-        public string? deb_agencia { get; set; }
-        public string? deb_conta { get; set; }
-        public string? codigo_operacao { get; set; }
-        public string? tipo_pessoa_titular_conta { get; set; }
-        public string? cnpj_cpf_titular_conta { get; set; }
+        public string? crm_data_sem_porta_disponivel { get; set; }
         public string? nome_pai { get; set; }
-        public string? cpf_pai { get; set; }
-        public string? identidade_pai { get; set; }
-        public string? nascimento_pai { get; set; }
         public string? nome_mae { get; set; }
-        public string? cpf_mae { get; set; }
-        public string? identidade_mae { get; set; }
+        public string? nascimento_pai { get; set; }
         public string? nascimento_mae { get; set; }
-        public string? quantidade_dependentes { get; set; }
+        public string? identidade_pai { get; set; }
+        public string? identidade_mae { get; set; }
+        public string? cpf_pai { get; set; }
+        public string? cpf_mae { get; set; }
         public string? nome_conjuge { get; set; }
         public string? fone_conjuge { get; set; }
         public string? cpf_conjuge { get; set; }
         public string? rg_conjuge { get; set; }
         public string? data_nascimento_conjuge { get; set; }
-        public string? nome_contador { get; set; }
-        public string? telefone_contador { get; set; }
-        public string? orgao_publico { get; set; }
-        public string? im { get; set; }
-        public string? nome_representante_1 { get; set; }
-        public string? cpf_representante_1 { get; set; }
-        public string? identidade_representante_1 { get; set; }
-        public string? nome_representante_2 { get; set; }
-        public string? cpf_representante_2 { get; set; }
-        public string? identidade_representante_2 { get; set; }
-        public string? iss_classificacao_padrao { get; set; }
-        public string? desconto_irrf_valor_inferior { get; set; }
-        public string? ref_com_empresa1 { get; set; }
-        public string? ref_com_fone1 { get; set; }
-        public string? ref_com_empresa2 { get; set; }
-        public string? ref_com_fone2 { get; set; }
         public string? ref_pes_nome1 { get; set; }
         public string? ref_pes_fone1 { get; set; }
         public string? ref_pes_nome2 { get; set; }
         public string? ref_pes_fone2 { get; set; }
+        public string? senha { get; set; }
+        public string? acesso_automatico_central { get; set; }
+        public string? alterar_senha_primeiro_acesso { get; set; }
+        public string? senha_hotsite_md5 { get; set; }
+        public string? hotsite_acesso { get; set; }
+        public string? indicado_por { get; set; }
+        public string? filial_id { get; set; }
+        public string? id_vendedor { get; set; }
+        public string? responsavel { get; set; }
+        public string? id_perfil { get; set; }
+        public string? id_tipo_cliente { get; set; }
+        public string? id_segmento { get; set; }
+        public string? id_candato_tipo { get; set; }
+        public string? tipo_assinante { get; set; }
+        public string? id_concorrente { get; set; }
+        public string? id_campanha { get; set; }
+        public string? data_cadastro { get; set; }
+        public string? ultima_atualizacao { get; set; }
+        public string? token { get; set; }
         public string? obs { get; set; }
         public string? alerta { get; set; }
-
+        public string? filtra_filial { get; set; }
+        public string? tipo_ente_governamental { get; set; }
+        public string? quantidade_dependentes { get; set; }
+        public string? moradia { get; set; }
+        public string? nome_contador { get; set; }
+        public string? telefone_contador { get; set; }
+        public string? emp_empresa { get; set; }
+        public string? emp_cnpj { get; set; }
+        public string? emp_cep { get; set; }
+        public string? emp_endereco { get; set; }
+        public string? emp_cidade { get; set; }
+        public string? emp_fone { get; set; }
+        public string? emp_cargo { get; set; }
+        public string? emp_remuneracao { get; set; }
+        public string? emp_data_admissao { get; set; }
+        public string? website { get; set; }
+        public string? orgao_publico { get; set; }
+        public string? im { get; set; }
+        public string? cif { get; set; }
+        public string? tipo_cliente_scm { get; set; }
+        public string? inscricao_municipal { get; set; }
+        public string? codigo_operacao { get; set; }
+        public string? convert_cliente_forn { get; set; }
+        public string? atualizar_cadastro_galaxPay { get; set; }
+        public string? foto_cartao { get; set; }
+        public string? cidade_naturalidade { get; set; }
     }
 }
