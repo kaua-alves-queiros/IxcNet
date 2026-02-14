@@ -1,7 +1,7 @@
 ﻿using IxcNet.Interfaces;
 using System.Text.Json.Serialization;
 
-namespace IxcNet.ViewModels.Sistema.Cadastros
+namespace IxcNet.ViewModels.Sistema.Cadastros.Clientes
 {
     public class ClienteViewModel : INamedModel
     {

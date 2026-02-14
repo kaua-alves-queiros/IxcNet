@@ -1,4 +1,4 @@
-﻿namespace IxcNet.ViewModels.Sistema.Cadastros
+﻿namespace IxcNet.ViewModels.Sistema.Cadastros.Clientes
 {
     public class ClienteContratoViewModel
     {
