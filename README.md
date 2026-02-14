@@ -49,31 +49,31 @@ Endpoint | Status | Testado
 Este roadmap descreve as etapas planejadas para evolução do **IxcNet**.
 
 ### 🔹 Fase 1 — Consolidação da Base (Curto Prazo)
-- [x] 🧱 Estrutura base do SDK
-  - [x] Padronização da estrutura do SDK
-  - [x] Client HTTP centralizado
-  - [x] Tratamento global de erros e exceções
-  - [x] Mecanismo de autenticação reutilizável
-  - [x] Criação e refinamento de DTOs
-  - [x] Documentação inicial
-  - [x] Adição de logs nos métodos Listar, Inserir
-  - [x] Pipeline de CI/CD (GitHub Actions)
+- ✅ **Estrutura base do SDK**
+  - ✅ Padronização da estrutura do SDK
+  - ✅ Client HTTP centralizado
+  - ✅ Tratamento global de erros e exceções
+  - ✅ Mecanismo de autenticação reutilizável
+  - ✅ Criação e refinamento de DTOs
+  - ✅ Documentação inicial
+  - ✅ Adição de logs nos métodos Listar, Inserir
+  - ✅ Pipeline de CI/CD (GitHub Actions)
 
 ### 🔹 Fase 2 — Expansão de Endpoints (Médio Prazo)
 - [ ] 🔌 Cobertura funcional da API
-  - [x] Adicionar action de build da documentação DocFX
+  - ✅ Adicionar action de build da documentação DocFX
   - [ ] Adição de métodos Alterar e Excluir
-  - [x] Finalização dos endpoints já iniciados
-  - [x] Implementação de cadastros de clientes e contratos
-  - [x] Implementação de endereços e localidades
-  - [x] Implementação de suporte e ordens de serviço
-  - [x] Testes unitários básicos
+  - ✅ Finalização dos endpoints já iniciados
+  - ✅ Implementação de cadastros de clientes e contratos
+  - ✅ Implementação de endereços e localidades
+  - ✅ Implementação de suporte e ordens de serviço
+  - ✅ Testes unitários básicos
 
 ### 🔹 Fase 3 — Qualidade e Estabilidade
 - [ ] 🧪 Robustez e confiabilidade
-  - [x] Testes automatizados
-  - [x] Mock da API IXC
-  - [x] Padronização de respostas e exceções
+  - ✅ Testes automatizados
+  - ✅ Mock da API IXC
+  - ✅ Padronização de respostas e exceções
   - [ ] Validação de payloads
   - [ ] Sistema de logging configurável
 
