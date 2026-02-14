@@ -60,11 +60,10 @@ Este roadmap descreve as etapas planejadas para evolução do **IxcNet**.
 - [ ] 🔌 Cobertura funcional da API
   - [x] Adicionar action de build da documentação DocFX
   - [ ] Adição de métodos Alterar e Excluir
-  - [ ] Finalização dos endpoints já iniciados
-  - [ ] Implementação de cadastros de clientes e contratos
-  - [ ] Implementação de endereços e localidades
-  - [ ] Implementação de suporte e ordens de serviço
-  - [ ] Versionamento interno dos módulos
+  - [x] Finalização dos endpoints já iniciados
+  - [x] Implementação de cadastros de clientes e contratos
+  - [x] Implementação de endereços e localidades
+  - [x] Implementação de suporte e ordens de serviço
   - [x] Testes unitários básicos
 
 ### 🔹 Fase 3 — Qualidade e Estabilidade
