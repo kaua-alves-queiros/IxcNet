@@ -2,9 +2,8 @@ name: .NET Core Test
 
 on:
   push:
-    branches: [ "main", "develop" ]
-  pull_request:
-    branches: [ "main", "develop" ]
+    branches: [ master ]
+  workflow_dispatch:
 
 jobs:
   test:
